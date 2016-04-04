@@ -1,2 +1,0 @@
-nucelar reactor, atomic pile : heats water
-steam turbine (electric generator), steam engine: turns hot water into fake steam and cools the water
