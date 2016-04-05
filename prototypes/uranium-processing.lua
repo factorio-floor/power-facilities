@@ -3,7 +3,8 @@
 require "prototypes.resource.uranium-ore"
 require "prototypes.uranium-processing-basic"
 require "prototypes.nuclear-fuel"
-require "prototypes/electric-generator-component"
+require "prototypes.electric-generator-component"
+require "prototypes.steam-turbine"
 
 -- data:extend(
 -- {
