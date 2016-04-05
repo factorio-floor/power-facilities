@@ -7,7 +7,7 @@ data:extend(
     icon = "__power-facilities__/graphics/icons/uranium-fuel-rod-purified.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
-    order = "f-a[purified-uranium-control-rod]",
+    order = "f-a[uranium-fuel-rod-purified]",
     stack_size = 1
   },
   {
