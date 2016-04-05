@@ -18,7 +18,7 @@ data:extend(
     flags = {"goes-to-main-inventory"},
     subgroup = "raw-resource",
     order = "f-a[uranium-ore]",
-    stack_size = 40
+    stack_size = 80
   },
 
   {
@@ -31,7 +31,7 @@ data:extend(
     {
       hardness = 0.7,
       -- mining_particle = "uranium-ore-particle",
-      mining_time = 1,
+      mining_time = 1.4,
       result = "uranium-ore"
     },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
@@ -40,7 +40,7 @@ data:extend(
     {
       control = "uranium-ore",
       sharpness = 1,
-      richness_multiplier = 1000,
+      richness_multiplier = 600,
       richness_base = 140,
       size_control_multiplier = 0.05,
       peaks = {
@@ -117,7 +117,7 @@ data:extend(
         variation_count = 8
       }
     },
-    map_color = {r=0.000, g=0.580, b=0.000}
+    map_color = {r=0.277, g=0.804, b=0.226}
   },
 }
 )

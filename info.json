@@ -1,0 +1,10 @@
+{
+	"name": "power-facilities",
+	"version": "0.0.0",
+	"title": "Power Facilities",
+	"author": "thorsummoner@live.com",
+	"description": "Power Generation",
+	"dependencies": ["base >= 0.12.11"],
+    "homepage": "https://github.com/factorio-floor/power-facilities",
+	"license": "GNU GPL v3"
+}
