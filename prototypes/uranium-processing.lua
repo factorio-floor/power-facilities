@@ -2,6 +2,7 @@
 -- Item: uranium ore
 require "prototypes.resource.uranium-ore"
 require "prototypes.uranium-processing-basic"
+require "prototypes.nuclear-fuel"
 
 -- data:extend(
 -- {
@@ -465,24 +466,6 @@ require "prototypes.uranium-processing-basic"
 
 --   -- Entity: atomic pile
 --   -- Entity: nuclear reactor
---   {
---     type = "recipe",
---     name = "nuclear fuel rods",
---     category = "advanced-crafting",
---     ingredients = {
---       {"purified uranium",12}
---     },
---     results = "nuclear fuel rod",
---   },
---   {
---     type = "recipe",
---     name = "enriched fuel rods",
---     category = "advanced-crafting",
---     ingredients = {
---       {"enriched uranium",8}
---     },
---     results = "nuclear fuel rod",
---   },
 
 --   {
 --     type = "boiler",
