@@ -27,7 +27,7 @@ data:extend(
     name = "cooling-tower",
     icon = "__base__/graphics/icons/storage-tank.png",
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 3, result = "storage-tank"},
+    minable = {hardness = 0.2, mining_time = 3, result = "cooling-tower"},
     max_health = 500,
     order = "a",
     corpse = "medium-remnants",
@@ -35,7 +35,7 @@ data:extend(
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     fluid_box =
     {
-      base_area = 250,
+      base_area = 9,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
