@@ -3,46 +3,44 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "cooling-tower",
+    name = "offshore-drain",
     ingredients =
     {
-      {"pipe", 9},
-      {"iron-plate", 12},
-      -- {"concrete", 48},
+      {"pipe", 2},
     },
-    result = "cooling-tower"
+    result = "offshore-drain"
   },
   {
     type = "item",
-    name = "cooling-tower",
-    icon = "__power-facilities__/graphics/icons/cooling-tower.png",
+    name = "offshore-drain",
+    icon = "__power-facilities__/graphics/icons/offshore-drain.png",
     flags = {"goes-to-quickbar"},
     subgroup = "energy",
-    order = "b[steam-power]-b[cooling-tower]",
-    place_result = "cooling-tower",
+    order = "b[steam-power]-b[offshore-drain]",
+    place_result = "offshore-drain",
     stack_size = 10
   },
   {
     type = "storage-tank",
-    name = "cooling-tower",
-    icon = "__power-facilities__/graphics/icons/cooling-tower.png",
+    name = "offshore-drain",
+    icon = "__power-facilities__/graphics/icons/offshore-drain.png",
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 3, result = "cooling-tower"},
+    minable = {hardness = 0.2, mining_time = 0.8, result = "offshore-drain"},
     max_health = 500,
     order = "a",
     corpse = "medium-remnants",
-    collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
+    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     fluid_box =
     {
       base_area = 9,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        { position = {-2, -1}, type="input" },
-        { position = {-2,  1}, type="input" },
-        { position = { 2, -1}, type="output" },
-        { position = { 2,  1}, type="output" },
+        { position = {-1, 0}, type="input" },
+        { position = {1, 0},  type="input" },
+        { position = {0, -1}, type="input" },
+        { position = {0, 1},  type="input" },
       },
     },
     window_bounding_box = {{-0.125, 0.6875}, {0.1875, 1.1875}},
@@ -52,11 +50,11 @@ data:extend(
       {
         sheet =
         {
-          filename = "__power-facilities__/graphics/entity/cooling-tower/cooling-tower.png",
+          filename = "__base__/graphics/entity/pipe/pipe-cross.png",
           priority = "extra-high",
           frames = 1,
-          width = 93,
-          height = 143,
+          width = 40,
+          height = 40,
           shift = {0, 0}
         }
       },
