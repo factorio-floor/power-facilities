@@ -53,31 +53,31 @@ data:extend(
           filename = "__base__/graphics/entity/pipe/pipe-cross.png",
           priority = "extra-high",
           frames = 1,
-          width = 40,
-          height = 40,
-          shift = {0, 0}
+          width = 93,
+          height = 143,
+          shift = {0, -1}
         }
       },
       fluid_background =
       {
-        filename = "__base__/graphics/entity/storage-tank/fluid-background.png",
+        filename = "__power-facilities__/graphics/none.png",
         priority = "extra-high",
-        width = 32,
-        height = 15
+        width = 1,
+        height = 1
       },
       window_background =
       {
-        filename = "__base__/graphics/entity/storage-tank/window-background.png",
+        filename = "__power-facilities__/graphics/none.png",
         priority = "extra-high",
-        width = 17,
-        height = 24
+        width = 1,
+        height = 1
       },
       flow_sprite =
       {
-        filename = "__base__/graphics/entity/pipe/fluid-flow-low-temperature.png",
+        filename = "__power-facilities__/graphics/none.png",
         priority = "extra-high",
-        width = 160,
-        height = 20
+        width = 1,
+        height = 1
       }
     },
     flow_length_in_ticks = 360,
