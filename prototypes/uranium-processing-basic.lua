@@ -73,7 +73,11 @@ data:extend(
     type = "recipe",
     name = "uranium-mill",
     ingredients = {
-      {"iron-plate",20},{"steel-plate",8},{"iron-gear-wheel",5}
+      {"iron-plate",20},
+      {"steel-plate",16},
+      {"iron-gear-wheel",5},
+      {"advanced-circuit", 10},
+      {"assembling-machine-2", 1},
     },
     result = "uranium-mill"
   },
