@@ -116,7 +116,7 @@ data:extend(
     allowed_effects = {"consumption", "speed", "pollution"},
     crafting_categories = {"uranium-mill"},
     result_inventory_size = 4,
-    energy_usage = "180kW",
+    energy_usage = "278kW",
     crafting_speed = 1,
     source_inventory_size = 1,
     energy_source =
