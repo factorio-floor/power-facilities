@@ -121,7 +121,7 @@ data:extend(
     crafting_categories = {"uranium-mill"},
     result_inventory_size = 4,
     energy_usage = "278kW",
-    crafting_speed = 1,
+    crafting_speed = 4,
     source_inventory_size = 1,
     energy_source =
     {

@@ -13,7 +13,7 @@ data:extend(
   {
     type = "recipe",
     name = "uranium-fuel-rod-purified",
-    category = "crafting",
+    category = "advanced-crafting",
     ingredients = {
       {name="purified-uranium",amount=12},
       {name="plastic-bar",amount=8},
