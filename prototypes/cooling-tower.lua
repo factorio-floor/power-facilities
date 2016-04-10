@@ -54,10 +54,10 @@ data:extend(
         {
           filename = "__power-facilities__/graphics/entity/cooling-tower/cooling-tower.png",
           priority = "extra-high",
+          width = 188,
+          height = 182,
           frames = 1,
-          width = 96,
-          height = 143,
-          shift = {0, -0.7}
+          shift = {0, 0.12}
         }
       },
       fluid_background =
