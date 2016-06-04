@@ -14,6 +14,11 @@ script.on_event(defines.events.on_tick, function(event)
             if cooling_tower_entity and cooling_tower_entity.fluidbox and cooling_tower_entity.fluidbox[1] then
                 current = cooling_tower_entity.fluidbox[1]                       -- store current liquid
                 current.temperature = current.temperature - (current.amount / 10)
+                current.amount = current.amount - 10                              -- change current temperature
+                if current.amount < 0 then
+                    current.amount = 0
+                    current.amount = 0
+                end
                 if current.temperature < 15 then
                     current.temperature = 15
                 end
@@ -21,25 +26,26 @@ script.on_event(defines.events.on_tick, function(event)
             end
         end
     end
-    for idx, offshore_drain_entity in pairs(offshore_drain_entities) do
-        if not offshore_drain_entity.valid then
-            -- cleanup deleted things
-            offshore_drain_entities[idx] = nil
-        else
-            if offshore_drain_entity and offshore_drain_entity.fluidbox and offshore_drain_entity.fluidbox[1] then
-                current = offshore_drain_entity.fluidbox[1]                       -- store current liquid
-                current.amount = current.amount - 10                              -- change current temperature
-                if current.amount < 0 then
-                    current.amount = 0
-                end
-                offshore_drain_entity.fluidbox[1] = current                       -- update entity liquid
+    -- for idx, offshore_drain_entity in pairs(offshore_drain_entities) do
+    --     if not offshore_drain_entity.valid then
+    --         -- cleanup deleted things
+    --         offshore_drain_entities[idx] = nil
+    --     else
+    --         if offshore_drain_entity and offshore_drain_entity.fluidbox and offshore_drain_entity.fluidbox[1] then
+    --             current = offshore_drain_entity.fluidbox[1]                       -- store current liquid
+    --             current.amount = current.amount - 10                              -- change current temperature
+    --             if current.amount < 0 then
+    --                 current.amount = 0
+    --                 current.amount = 0
+    --             end
+    --             offshore_drain_entity.fluidbox[1] = current                       -- update entity liquid
 
-                if current.temperature > 25 then
-                    game.get_surface(1).pollute(offshore_drain_entity.position, (current.temperature - 25) * current.amount / 10)
-                end
-            end
-        end
-    end
+    --             if current.temperature > 25 then
+    --                 game.get_surface(1).pollute(offshore_drain_entity.position, (current.temperature - 25) * current.amount / 10)
+    --             end
+    --         end
+    --     end
+    -- end
 end)
 
 -- register entities

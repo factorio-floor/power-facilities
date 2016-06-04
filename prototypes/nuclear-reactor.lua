@@ -13,11 +13,11 @@ data:extend(
     {
       {"uranium-fuel-rod-purified", 1},
       {"uranium-fuel-rod-purified", 1},
-      {type="fluid", name="water", amount=30},
+      {type="fluid", name="water", amount=1},
 
     },
     results = {
-      {type="fluid", name="steam", amount=30}
+      {type="fluid", name="steam", amount=1600, temperature=400}
     },
     -- subgroup = "fluid-recipes"
   },
@@ -142,30 +142,38 @@ data:extend(
     },
     fluid_boxes =
     {
-      -- coolant
       {
-        base_area = 4,
+        production_type = "input",
         pipe_covers = pipecoverspictures(),
-        pipe_connections =
-        {
-          { position = { 2, -3}, type="input" },
-          { position = { 0, -3}, type="input" },
-          { position = {-3,  2}, type="output" },
-          { position = {-3,  0}, type="output" },
-        },
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {-1, 3} }}
       },
-      -- heating element
       {
-        base_area = 4,
+        production_type = "input",
         pipe_covers = pipecoverspictures(),
-        pipe_connections =
-        {
-          { position = { 1,  3}, type="input" },
-          { position = {-1,  3}, type="input" },
-          { position = { 3, -1}, type="output" },
-          { position = { 3,  1}, type="output" },
-        },
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {1, 3} }}
       },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        base_level = 1,
+        pipe_connections = {{ position = {-2, -3} }}
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        base_level = 1,
+        pipe_connections = {{ position = {0, -3} }}
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        base_level = 1,
+        pipe_connections = {{ position = {2, -3} }}
+      }
     },
     pipe_covers = pipecoverspictures()
   }

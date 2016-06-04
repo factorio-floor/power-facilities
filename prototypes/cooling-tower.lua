@@ -39,10 +39,14 @@ data:extend(
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        { position = {-2, -1}, type="input" },
-        { position = {-2,  1}, type="input" },
-        { position = { 2, -1}, type="output" },
-        { position = { 2,  1}, type="output" },
+        { position = {-2, -1}, type="input", fluid='steam' },
+        { position = {-2,  1}, type="input", fluid='steam' },
+        { position = { 2, -1}, type="input", fluid='steam' },
+        { position = { 2,  1}, type="input", fluid='steam' },
+        { position = {-1, -2}, type="input", fluid='steam' },
+        { position = { 1, -2}, type="input", fluid='steam' },
+        { position = {-1,  2}, type="input", fluid='steam' },
+        { position = { 1,  2}, type="input", fluid='steam' },
       },
     },
     window_bounding_box = {{-0.125, 0.6875}, {0.1875, 1.1875}},
