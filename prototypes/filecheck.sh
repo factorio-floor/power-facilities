@@ -2,7 +2,7 @@
 # Run From Current Directory
 # Querries git for all paths used by this mod
 # tests all paths using the 'file' command
-export MOD='cargo-containers'
+export MOD='power-facilities'
 git grep -h __${MOD}__ \
     | grep -vPe '-- ' \
     | sed -re 's/^ +//' \
